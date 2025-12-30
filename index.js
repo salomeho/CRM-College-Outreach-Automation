@@ -21,13 +21,11 @@ async function sendEmail(college) {
         from: '"Gi Suen" <wenifly123@gmail.com>', // sender address
         to: `${college['URL']}`, // list of receivers
         subject: 'Can I have a shirt?',
-        text: `Hello, My name is Gi. I always want to go to the ${college['School Name']} and experience the ${college['City']} life! I was wondering if you guys are able to send in a pamphlet with some cool spirit wear! I know it may sound like an odd request, but I really want to show my school pride. Thank you so much for listening to my request. If you are able to send something, my shirt size is Medium, but I will take whatever you have! 
+        text: `Hello, My name is Salome. I always want to go to the ${college['School Name']} and experience the ${college['City']} life! I was wondering if you guys are able to send in a pamphlet with some cool spirit wear! I know it may sound like an odd request, but I really want to show my school pride. Thank you so much for listening to my request. If you are able to send something, my shirt size is Medium, but I will take whatever you have! 
         My delivery address is :\n
-        3620 Chattahoochee Court
-        Duluth, GA, 30096
 
         Thank you again,
-        Gi Suen`,
+        Salome Ho`,
     });
 
     console.log('Message sent: %s', college['School Name']);
@@ -47,5 +45,6 @@ async function gooo() {
         await sendEmail(emails[i]);
     }
 }
+
 
 gooo();
